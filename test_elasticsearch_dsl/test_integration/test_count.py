@@ -1,4 +1,4 @@
-from elasticsearch_dsl.search import Search, Q
+from elasticsearch6_dsl.search import Search, Q
 
 def test_count_all(data_client):
     s = Search(using=data_client).index('git')

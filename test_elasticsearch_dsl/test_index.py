@@ -1,4 +1,4 @@
-from elasticsearch_dsl import DocType, Index, Text, Date, analyzer
+from elasticsearch6_dsl import DocType, Index, Text, Date, analyzer
 
 from random import choice
 

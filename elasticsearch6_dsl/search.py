@@ -3,8 +3,8 @@ import collections
 
 from six import iteritems, string_types
 
-from elasticsearch.helpers import scan
-from elasticsearch.exceptions import TransportError
+from elasticsearch6.helpers import scan
+from elasticsearch6.exceptions import TransportError
 
 from .query import Q, EMPTY_QUERY, Bool
 from .aggs import A, AggBase

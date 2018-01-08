@@ -33,7 +33,7 @@ instantiating the ``Search`` object:
 .. code:: python
 
     from elasticsearch import Elasticsearch
-    from elasticsearch_dsl import Search
+    from elasticsearch6_dsl import Search
 
     client = Elasticsearch()
 
@@ -110,7 +110,7 @@ between the raw query and its equivalent in the DSL:
 
 .. code:: python
 
-    from elasticsearch_dsl.query import MultiMatch, Match
+    from elasticsearch6_dsl.query import MultiMatch, Match
 
     # {"multi_match": {"query": "python django", "fields": ["title", "body"]}}
     MultiMatch(query='python django', fields=['title', 'body'])
@@ -549,7 +549,7 @@ If you need to execute multiple searches at the same time you can use the
 
 .. code:: python
 
-    from elasticsearch_dsl import MultiSearch, Search
+    from elasticsearch6_dsl import MultiSearch, Search
 
     ms = MultiSearch(index='blogs')
 

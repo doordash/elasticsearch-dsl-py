@@ -5,7 +5,7 @@ from dateutil import tz
 
 import pytest
 
-from elasticsearch_dsl import field
+from elasticsearch6_dsl import field
 
 def test_boolean_deserialization():
     bf = field.Boolean()

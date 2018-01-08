@@ -109,7 +109,7 @@ class IndexBody(object):
 
         Example::
 
-            from elasticsearch_dsl import analyzer, tokenizer
+            from elasticsearch6_dsl import analyzer, tokenizer
 
             my_analyzer = analyzer('my_analyzer',
                 tokenizer=tokenizer('trigram', 'nGram', min_gram=3, max_gram=3),

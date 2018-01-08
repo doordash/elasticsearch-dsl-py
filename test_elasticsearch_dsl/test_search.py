@@ -1,7 +1,7 @@
 from copy import deepcopy
 
-from elasticsearch_dsl import search, query, Q, DocType, utils
-from elasticsearch_dsl.exceptions import IllegalOperation
+from elasticsearch6_dsl import search, query, Q, DocType, utils
+from elasticsearch6_dsl.exceptions import IllegalOperation
 
 from pytest import raises
 

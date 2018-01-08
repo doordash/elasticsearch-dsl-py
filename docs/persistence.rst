@@ -17,7 +17,7 @@ pattern to the query dsl:
 
 .. code:: python
 
-    from elasticsearch_dsl import Keyword, Mapping, Nested, Text
+    from elasticsearch6_dsl import Keyword, Mapping, Nested, Text
 
     # name your type
     m = Mapping('my-type')
@@ -88,7 +88,7 @@ handle its creation:
 
 .. code:: python
 
-    from elasticsearch_dsl import analyzer, tokenizer
+    from elasticsearch6_dsl import analyzer, tokenizer
 
     my_analyzer = analyzer('my_analyzer',
         tokenizer=tokenizer('trigram', 'nGram', min_gram=3, max_gram=3),
@@ -116,7 +116,7 @@ If you want to create a model-like wrapper around your documents, use the
 .. code:: python
 
     from datetime import datetime
-    from elasticsearch_dsl import DocType, Date, Nested, Boolean, \
+    from elasticsearch6_dsl import DocType, Date, Nested, Boolean, \
         analyzer, InnerDoc, Completion, Keyword, Text
 
     html_strip = analyzer('html_strip',
@@ -401,7 +401,7 @@ in a migration:
 
 .. code:: python
 
-    from elasticsearch_dsl import Index, DocType, Text, analyzer
+    from elasticsearch6_dsl import Index, DocType, Text, analyzer
 
     blogs = Index('blogs')
 

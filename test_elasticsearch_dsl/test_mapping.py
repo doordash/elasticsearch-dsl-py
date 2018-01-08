@@ -1,6 +1,6 @@
 import json
 
-from elasticsearch_dsl import mapping, Text, Keyword, Nested, analysis
+from elasticsearch6_dsl import mapping, Text, Keyword, Nested, analysis
 
 
 def test_mapping_can_has_fields():

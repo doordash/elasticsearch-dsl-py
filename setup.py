@@ -14,9 +14,9 @@ f.close()
 install_requires = [
     'six',
     'python-dateutil',
-    'elasticsearch>=6.0.0,<7.0.0',
+    'elasticsearch6>=6.0.0,<7.0.0',
     # ipaddress is included in stdlib sincxe py 3.3
-    'ipaddress; python_version<"3.3"'
+    # 'ipaddress; python_version<"3.3"'
 ]
 
 tests_require = [
@@ -31,7 +31,7 @@ if sys.version_info[:2] == (2, 6):
     tests_require.append('unittest2')
 
 setup(
-    name = "elasticsearch-dsl",
+    name = "elasticsearch6-dsl",
     description = "Python client for Elasticsearch",
     license="Apache License, Version 2.0",
     url = "https://github.com/elasticsearch/elasticsearch-dsl-py",

@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from elasticsearch_dsl import DocType, Boolean, Date
-from elasticsearch_dsl.faceted_search import FacetedSearch, TermsFacet, DateHistogramFacet, RangeFacet
+from elasticsearch6_dsl import DocType, Boolean, Date
+from elasticsearch6_dsl.faceted_search import FacetedSearch, TermsFacet, DateHistogramFacet, RangeFacet
 
 class CommitSearch(FacetedSearch):
     index = 'flat-git'

@@ -1,4 +1,4 @@
-from elasticsearch_dsl import aggs, query
+from elasticsearch6_dsl import aggs, query
 
 from pytest import raises
 

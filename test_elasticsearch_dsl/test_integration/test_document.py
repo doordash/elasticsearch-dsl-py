@@ -4,9 +4,9 @@ from ipaddress import ip_address
 
 from elasticsearch import ConflictError, NotFoundError
 
-from elasticsearch_dsl import DocType, Date, Text, Keyword, Mapping, InnerDoc, \
+from elasticsearch6_dsl import DocType, Date, Text, Keyword, Mapping, InnerDoc, \
     Object, Nested, MetaField, Q, Long, Boolean, Double, Binary, Ip
-from elasticsearch_dsl.utils import AttrList
+from elasticsearch6_dsl.utils import AttrList
 
 from pytest import raises, fixture
 

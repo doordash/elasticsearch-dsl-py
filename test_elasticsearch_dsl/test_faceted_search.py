@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from elasticsearch_dsl.faceted_search import (FacetedSearch, TermsFacet,
+from elasticsearch6_dsl.faceted_search import (FacetedSearch, TermsFacet,
                                               DateHistogramFacet)
 
 

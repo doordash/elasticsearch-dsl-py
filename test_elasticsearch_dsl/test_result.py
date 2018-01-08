@@ -2,9 +2,9 @@ import pickle
 from datetime import date
 from pytest import raises, fixture
 
-from elasticsearch_dsl import response, Search, DocType, Date, Object
-from elasticsearch_dsl.aggs import Terms
-from elasticsearch_dsl.response.aggs import AggResponse, BucketData, Bucket
+from elasticsearch6_dsl import response, Search, DocType, Date, Object
+from elasticsearch6_dsl.aggs import Terms
+from elasticsearch6_dsl.response.aggs import AggResponse, BucketData, Bucket
 
 @fixture
 def agg_response(aggs_search, aggs_data):

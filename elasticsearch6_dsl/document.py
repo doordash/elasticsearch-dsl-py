@@ -1,7 +1,7 @@
 import collections
 from fnmatch import fnmatch
 
-from elasticsearch.exceptions import NotFoundError, RequestError
+from elasticsearch6.exceptions import NotFoundError, RequestError
 from six import iteritems, add_metaclass
 
 from .field import Field
